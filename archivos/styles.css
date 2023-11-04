@@ -211,7 +211,7 @@ nav .icon-bars .line {
 .search-box {
 	background-color: transparent;
 	width: 50%;
-	max-width: 100px;
+	max-width: 880px;
 	padding: 50px;
 	display: flex;
 	/* align-items: center; */
@@ -221,7 +221,7 @@ nav .icon-bars .line {
 }
 
 .imagen-fondo {
-	background-image:url(./foto.jpg);
+	background-image:url(./libro.jpg);
 }
 
 .el-libro {
@@ -241,6 +241,7 @@ nav .icon-bars .line {
 	align-items: center;
 	justify-content: center;
 }
+
 
 .nav {
 	background-color: black;
@@ -281,7 +282,7 @@ nav .icon-bars .line {
 	height: 95vh;
 	color:black;
 	border: 2px solid currentColor;
-	background-image: url(./foto.jpg);
+	background-image: url(./libro.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -309,3 +310,9 @@ nav .icon-bars .line {
 	justify-content: center;
 }
 
+.footer li {
+	background-color: black;
+	align-items: center;
+	justify-content: center;
+	color: bisque;
+}
