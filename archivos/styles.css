@@ -112,27 +112,12 @@ nav .list a:hover {
 
 }
 
-#toggle {
-    position: absolute;
-    top: -100px;
-}
 
-nav .icon-bars {
-    display: none;
-    position: absolute;
-    right: 5%;
-    top: 50%;
-    transform: translateY(-50%);
-}
+  
+  
+ 
+  
 
-nav .icon-bars .line {
-    width: 30px;
-    height: 5px;
-    background-color: aliceblue;
-    margin: 5px;
-    border-radius: 3px;
-    transition: all .3s ease-in-out;
-}
 
 @media (max-width:768px)
     nav .logo 
