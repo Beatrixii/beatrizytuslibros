@@ -1,41 +1,42 @@
-*{
-    padding: 0;
+* {
     margin: 0;
-    /* box-sizing: border-box; */
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-	width: 60%;
-	height: 40vh;
-	background-color: transparent;
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
 
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
 }
 
-.text_container {
-	display: flex-start;
-	justify-content: flex-start;
-   
-}
-
-.search-box {
-	display: flex;
-	align-items: flex-start;
-   
+.titulo {
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .search-box {
-	background-color: transparent;
-	width: 100%;
-	max-width: 100px;
-	padding: 100px;
 	display: flex;
 	align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.search-box {
+	background-color: transparent;
+	width: 50%;
+	max-width: 880px;
+	padding: 50px;
+	display: flex;
+	/* align-items: center; */
 	border-radius: 100px;
-	height: 100px;
-	
+	height: 50px;
+	position: center;
+    
 }
 
 button {
@@ -50,8 +51,87 @@ button {
     color: black;
     cursor: pointer;
     align-items: flex-start;
+    
   /*   position: absolute; */
 }
+
+.search-box {
+	background-color: transparent;
+	width: 100%;
+	max-width: 100px;
+	padding: 100px;
+	display: flex;
+	align-items: flex-start;
+	border-radius: 100px;
+	height: 100px;
+	
+}
+
+.button {
+	color: bisque;
+	height: 20px;
+	width: 10px;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background: black;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, black (340, 95%, 50%, 0.459), gray (317, 45%, 52%, 0.664)), url(./libro.jpg) ;
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, black (340, 95%, 50%, 0.459),gray (317, 45%, 52%, 0.664)), url(./libro.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: left;
+    /* padding: 30px 50px 0 0; */
+}
+
+nav > a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.textos-header h1{
+    font-size: 50px;
+    color:#fff;
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color:#fff;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 
 button:hover {
     background-color: black;
@@ -204,10 +284,6 @@ nav .list a:hover {
 	position: center; 
 }
 
-.imagen-fondo {
-	background-image:url(./libro.jpg);
-}
-
 .el-libro {
 	height: 150px;
 	width: 200px;
@@ -221,22 +297,28 @@ nav .list a:hover {
 }
 
 .body {
-	color: black;
+    font-family: "open sans";
+    background-image: url(./libro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+	color: whitesmoke;
 	align-items: center;
 	justify-content: center;
 }
 
 .h1 {
+	padding: 40px;
 	font-family: monospace;
-	height: 250px;
-	width: 350px;
 	border: 4px solid rgba(10, 98, 98, 0.5);
-	border-radius: 30px;
+	border-radius: 50px;
 	display: flex;
 	justify-content: flex-start;
 	align-items: flex-start;
 	text-align: flex-start;
-  
+}
+
+.fieldset h1 {
+	padding: 50px;
 }
 
 .nav {
@@ -295,20 +377,162 @@ nav .list a:hover {
 	display: flex;
 }
 
-.footer {
-    background-color: black;
-	margin: 10px;
-	padding: 10px;
-	color: bisque;
-	display: flex;
-	padding: 0.0.5em;
-	align-items: center;
-	justify-content: center;
+footer{
+    background: black;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
 }
 
-.footer li {
-	background-color: black;
-	align-items: center;
-	justify-content: center;
-	color: bisque;
+.label {
+    color: whitesmoke; 
 }
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.content-foo{
+    text-align: center;
+}
+
+.content-foo h4{
+    color: whitesmoke;
+    border-bottom: 3px solid whitesmoke;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: whitesmoke;
+}
+
+@media screen and (max-width:900px){
+    header{
+        background-position: center;
+    }
+
+   
+  
+
+    
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .servicio-ind{
+        width: 100%;
+        text-align: center;
+    }
+
+    .servicio-ind:nth-child(1), .servicio-ind:nth-child(2){
+        margin-bottom: 60px;
+    }
+
+    .servicio-ind img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+
+    .textos-header h1{
+        font-size: 35px;
+    }
+
+    .textos-header h2{
+        font-size: 20px;
+    }
+
+    .cards{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .cards .card{
+        background: gray;
+        display: flex;
+        width: 46%;
+        height: 200px;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    }
+    
+    .cards .card img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        display: block;
+    }
+    
+    .cards .card > .contenido-texto-card{
+        width: 60%;
+        color: #fff;
+    }
+    
+    .cards .card > .contenido-texto-card p{
+        font-weight: 300;
+        padding-top: 5px;
+    }
+
+    .cards{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cards .card{
+        width: 90%;
+    }
+
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+
+    .cards .card{
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards .card img{
+        width: 90px;
+        height: 90px;
+    }
+    
+/* position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+transform: scale(0);
+background: hsla(273,91%,27%, 0.7);
+transition: transform .5s;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column; */
