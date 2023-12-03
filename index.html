@@ -10,64 +10,97 @@
     />
     <title>Beatriz</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.sql">
+    <link rel="stylesheet" href="libro.sql">
+    <link rel="stylesheet" href="usuarios.sql">
     <link rel="stylesheet" href="index.js">
+</head>
 
-    <nav>
-        <div class="logo">
-            BEATRIZ
-        </div>
-        <ul class="list">
-            <li><a href="http://127.0.0.1:5500/inicio.html">Inicio</a></li>
-            <li><a href="http://127.0.0.1:5500/archivos/BEATRIZ.html">Biografia</a></li>
-            <li><a href="#">Trabaja conmigo</a></li>
-            <li><a href="http://127.0.0.1:5500/productos.html">Productos</a></li>
+<body>
+    <header>
+        <script>
+            window.alert("Bienvenido");
+        </script>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Trabaja conmigo</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
             <form  class="search-box">
                 <input class="text_container" placerholder="Buscar"/>
                 <button type="">Enviar</button>
-        </form>
-        </ul>    
-    </nav>
-   
-</head>
-<body>
-    <div class="container">
-    <fieldset>
-        <h1>hola</h1>
-    </fieldset>
-    </div>
-    
-
-<footer>
-    <ul class="nav">
-    <li><a href="tel:682378597">Realiza una llamada</a></li>
-    <li><a href="martinezgarciabeatriz10@gmail.com">Envia un correo</a></li>
-    <li><a href="dudas frecuentes">Dudas frecuentes</a></li>
-    <li><a href="@beatrizyruslibros">Redes sociales-Instagram</a></li>
-    </ul>
-</footer>
-
-<footer>
-    <form>
-    <ul class="nav">
-    <li>
-        <label for="mail">Email:</label>
-        <input type="email" id="mail" name="user_email" />
-    </li>
-    <li>
-        <label for="msg">Telefono de contacto:</label>
-        <textarea id="tlf" name="user_telefono"></textarea>
-    <li>
-        <label for="mail">Nombre y apellidos:</label>
-        <input type="nombre" id="nombre" name="user_nombre" />
-    </li>
-        
-    </li>       
-        <button>Enviar formulario</button>
-        <section id="ContentFormulario">
-        <button type="reset">Restablecer formulario</button>
+        </nav>
+        <section class="textos-header">
+            <h1>Beatriz</h1>
+            <h2>Escritora de novela negra</h2>
         </section>
-    </ul> 
-    </form>
-</footer>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+            <h2 class="titulo">Productos</h2>
+            
+    </main>
+
+        <section class="clientes contenedor">
+            <h2 class="Productos"></h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="contenido-texto-card">
+                        <h4>Name</h4>
+                        <p></p>
+                    </div>
+            </div>
+        </section>
+        <footer>
+            <form>
+                <ul class="contenedor-footer">
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" />
+                    </li>
+                    <li>
+                        <label for="tlf">Telefono de contacto:</label>
+                        <textarea id="tlf" name="user_telefono"></textarea>
+                    </li>
+                    <li>
+                        <label for="name">Nombre y apellidos:</label>
+                        <input type="nombre" id="nombre" name="user_nombre" />
+                    </li>
+                    <li>
+                        <a href="redes sociales">Redes sociales</a>
+                    </li>
+                    <li>
+                        <a href="dudas frecuentes">Dudas frecuentes</a>
+                    </li>
+                        <section>     
+                        <button>Enviar formulario</button>
+                        <section id="ContentFormulario">
+                        <button type="reset">Restablecer formulario</button>
+                        </section>
+                </ul>
+            </form>  
+        </footer>
+    </body>
+    
+    </html>
+       
 </body>
+
 </html>
